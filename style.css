@@ -253,7 +253,7 @@ input:-webkit-autofill:focus {
 **/
 
 .box {
-    padding: 50px 30px;
+    /* padding: 50px 30px; */
     text-align: center;
     -webkit-box-shadow: 0 0 0 0 #ffffff;
     box-shadow: 0 0 0 0 #ffffff;
@@ -265,9 +265,10 @@ input:-webkit-autofill:focus {
     height: 450px
 }
 
+
 .box_Pricing {
      
-    height: 630px
+    height: 555px
 
 }
 
@@ -296,6 +297,57 @@ input:-webkit-autofill:focus {
 }
 
 .box:hover .box-icon img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0)
+}
+
+/**
+*Division de cajas
+**/
+
+.box_Services {
+    padding: 50px 30px;
+    text-align: center;
+    -webkit-box-shadow: 0 0 0 0 #ffffff;
+    box-shadow: 0 0 0 0 #ffffff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 5px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    height: 450px
+}
+.box_Services_Pricing {
+     
+    height: 555px
+
+}
+
+.box_Services:hover {
+    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+.box_Services h4 {
+    text-transform: uppercase;
+}
+
+.box_Services .box_Services-icon {
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.box_Services .box_Services-icon img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.box_Services:hover .box_Services-icon img {
     -webkit-filter: grayscale(0);
     filter: grayscale(0)
 }
@@ -435,13 +487,13 @@ input:-webkit-autofill:focus {
     padding: 50px 40px;
     border-radius: 2px;
     text-align: center;
-    background-color: #f3f2f2;    
+    /* background-color: #f3f2f2;     */
     position: relative;
     margin-top: 20px
 }
 
 .price-table.active {
-    padding: 70px 40px;
+    padding: 40px 40px;
     margin-top: 0
 }
 
