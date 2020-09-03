@@ -135,7 +135,7 @@ input:-webkit-autofill:focus {
 }
 
 .section-padding {
-    padding: 120px 0;
+    padding: 60px 0;
 }
 
 .social-menu {
@@ -261,7 +261,14 @@ input:-webkit-autofill:focus {
     transition: 0.3s;
     border-radius: 5px;
     -webkit-transform: translateY(0);
-    transform: translateY(0)
+    transform: translateY(0);
+    height: 450px
+}
+
+.box_Pricing {
+     
+    height: 630px
+
 }
 
 .box:hover {
