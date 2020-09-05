@@ -57,6 +57,7 @@ a:hover {
 img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 5%;
 }
 
 h1,
@@ -67,6 +68,7 @@ h5,
 h6 {
     margin: 0 0 10px;
     font-weight: 600;
+    text-align: center;
 }
 
 html,
@@ -119,6 +121,11 @@ input:-webkit-autofill:focus {
 .p-titulo
 {
     font-size: 25px;
+    text-align: center;
+}
+.p-subTitulos
+{
+    text-align: center;
 }
 
 .v-center {
@@ -302,7 +309,7 @@ input:-webkit-autofill:focus {
 }
 
 /**
-*Division de cajas
+*Division de cajas estilos
 **/
 
 .box_Services {
@@ -389,6 +396,7 @@ input:-webkit-autofill:focus {
 
 .mainmenu-area .logo h2 {
     margin-bottom: 0;
+    text-align: start;
 }
 
 .mainmenu-area #primary-menu > ul > li > a {
