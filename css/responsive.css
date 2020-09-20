@@ -110,8 +110,8 @@
     .footer-top {
         margin-bottom: 50px;
     }
-    .x-left {
-        text-align: left;
+    .x-left {s
+        text-align: right;
     }
     .mainmenu-area .logo {
         margin-left: 15px;
@@ -122,10 +122,10 @@
         font-size: 10px;
         color: #3B7DFF;
     }
-    .social-menu li a {
+    /* .social-menu li a {
         display: block;
-        width: 30px;
-        height: 31px;
+        width: 50px;
+        height: 50px;
         text-align: center;
         line-height: 2.5em;
         background-color: #ffffff;
@@ -134,6 +134,30 @@
         -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
         font-size: 15px;
+    } */
+    .social-menu-footer li a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 2.5em;
+        background-color: #ffffff;
+        color: #3B7DFF;
+        border-radius: 100px;
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        font-size: 15px;
+    }
+
+    .social-menu-footer li a {
+        display: contents;
+        display: flex;
+    }
+    .social-menu li a {
+        display: none;
+    }
+    .social-menu-navBar{
+        display: none;
     }
     .mainmenu-area .navbar-toggle .icon-bar {
         background-color: #3B7DFF;
@@ -158,5 +182,23 @@
 {
     .anlge-bg {
         background: url(images/angle-bg.png)scroll center bottom -92px;
+    }
+    ul {
+        list-style: none;
+        /* display: inline-flex; */
+        margin-top: 10px;
+        display: contents;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 568px)
+{
+    .anlge-bg {
+        background: url(images/angle-bg.png)scroll center bottom -92px;
+    }
+    ul {
+        list-style: none;
+        /* display: inline-flex; */
+        margin-top: 10px;
+        display: contents;
     }
 }

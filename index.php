@@ -1,3 +1,5 @@
+<?php include 'sendemail.php'; ?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -62,8 +64,6 @@
                     <li><a href="#service-page">Servicios</a></li>
                     <li><a href="#price-page">Precios & planes</a></li>
                     <li><a href="#contact-page">Contactanos</a></li>
-                    <li><a href="https://facebook.com/bemusscr" target="_blank"><i class="ti-facebook social-menu-navBar"></i></a></li>
-                    <li><a href="https://www.instagram.com/bemusscr/" target="_blank"><i class="ti-instagram social-menu-navBar"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -132,7 +132,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="box_Services">
                         <div class="box-icon">
-                            <img src="images/asesoria-tecnica-3.png" alt="">
+                            <img src="images/makedi-2.png" alt="">
                         </div>
                         <h3>Asesoría Técnica y Consultoría</h3>
                         <p>Le brindamos nuestra experiencia para poner en marcha su proyecto tecnológico, hemos trabajo con varias personas, todos con necesidades diferentes, nosotros diseñando herramientas para diversas soluciones.</p>
@@ -201,39 +201,16 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="box_Pricing box">
                         <div class="price-table active">
-                            <h3 class="text-uppercase price-title">Profesional</h3>
-                            <hr>
-                            <ul class="list-unstyled">
-                                <li><strong class="amount"><span class="big">₡60.000</span></strong>/Año  *****  <strong><span class="big">₡6.000</span></strong>/mes  </li>
-                                <li>Archivos Electrónico Ilimitados</li>
-                                <li>Factura Electronica</li>                                    
-                                <li>Nota de Credito y Debito Electronica</li>
-                                <li> <strong><span class="big"> <u>Ademas</u></span></strong></li>
-                                <li>Incluye respaldo de Documentos</li> 
-                                <li>Acceso a recepcion de documentos</li>                               
-                                <li>Incluye soporte</li>
-                                <li><u><span class="big little"><b>*Aplican restricciones</b></span></u></li>
-                            </ul>
-                            <hr>
-                            <a href="#contact-page" class="button">Contactenos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="box_Pricing box">
-                        <div class="price-table active">
                             <h3 class="text-uppercase price-title">Plan #1</h3>
                             <hr>
                             <ul class="list-unstyled">
-                                <li><strong class="amount"><span class="big">₡100.000</span></strong>/Año  *****  <strong><span class="big">₡10.000</span></strong>/mes  </li>
-                                <li>Archivos Electrónicos: 1 - 300</li>
-                                <li>Factura Electrónica</li>                                    
-                                <li>Nota de Crédito y Débito Electrónica</li>
+                                <li><strong class="amount"><span class="big">₡60.000</span></strong>/Año  *****  <strong><span class="big">₡6.000</span></strong>/mes  </li>
+                                <li>Archivos Electronico Ilimitados</li>
+                                <li>Factura Electronica</li>                                    
+                                <li>Nota de Credito y Debito Electronica</li>
                                 <li> <strong><span class="big"> <u>Ademas</u></span></strong></li>
-                                <li>Incluye respaldo de Documentos</li> 
-                                <li>Acceso a recepción de documentos</li>                               
+                                <li>Incluye respaldo de Documentos</li>                                
                                 <li>Incluye soporte</li>
-                                <li><u><span class="big little"><b>*Aplican restricciones</b></span></u></li>
                             </ul>
                             <hr>
                             <a href="#contact-page" class="button">Contactenos</a>
@@ -246,15 +223,13 @@
                             <h3 class="text-uppercase price-title">Plan #2</h3>
                             <hr>
                             <ul class="list-unstyled">
-                                <li><strong class="amount"><span class="big">₡150.000</span></strong>/Año  *****  <strong><span class="big">₡15.000</span></strong>/mes  </li>
-                                <li>Archivos Electrónicos: 301 - 600</li>
-                                <li>Factura Electrónica</li>                                    
-                                <li>Nota de Crédito y Débito Electrónica</li>
+                                <li><strong class="amount"><span class="big">₡100.000</span></strong>/Año  *****  <strong><span class="big">₡10.000</span></strong>/mes  </li>
+                                <li>Archivos Electronico: 1 - 300</li>
+                                <li>Factura Electronica</li>                                    
+                                <li>Nota de Credito y Debito Electronica</li>
                                 <li> <strong><span class="big"> <u>Ademas</u></span></strong></li>
-                                <li>Incluye respaldo de Documentos</li> 
-                                <li>Acceso a recepción de documentos</li>                               
+                                <li>Incluye respaldo de Documentos</li>                                
                                 <li>Incluye soporte</li>
-                                <li><u><span class="big little"><b>*Aplican restricciones</b></span></u></li>
                             </ul>
                             <hr>
                             <a href="#contact-page" class="button">Contactenos</a>
@@ -267,15 +242,13 @@
                             <h3 class="text-uppercase price-title">Plan #3</h3>
                             <hr>
                             <ul class="list-unstyled">
-                                <li><strong class="amount"><span class="big">₡200.000</span></strong>/Año  *****  <strong><span class="big">₡20.000</span></strong>/mes  </li>
-                                <li>Archivos Electrónicos: 601 - 1000</li>
-                                <li>Factura Electrónica</li>                                    
-                                <li>Nota de Crédito y Débito Electrónica</li>
+                                <li><strong class="amount"><span class="big">₡150.000</span></strong>/Año  *****  <strong><span class="big">₡15.000</span></strong>/mes  </li>
+                                <li>Archivos Electronico: 301 - 600</li>
+                                <li>Factura Electronica</li>                                    
+                                <li>Nota de Credito y Debito Electronica</li>
                                 <li> <strong><span class="big"> <u>Ademas</u></span></strong></li>
-                                <li>Incluye respaldo de Documentos</li> 
-                                <li>Acceso a recepción de documentos</li>                               
+                                <li>Incluye respaldo de Documentos</li>                                
                                 <li>Incluye soporte</li>
-                                <li><u><span class="big little"><b>*Aplican restricciones</b></span></u></li>
                             </ul>
                             <hr>
                             <a href="#contact-page" class="button">Contactenos</a>
@@ -288,15 +261,13 @@
                             <h3 class="text-uppercase price-title">Plan #4</h3>
                             <hr>
                             <ul class="list-unstyled">
-                                <li><strong class="amount"><span class="big">₡300.000</span></strong>/Año  *****  <strong><span class="big">₡30.000</span></strong>/mes  </li>
-                                <li>Archivos Electrónicos: 1001 - 3000</li>
-                                <li>Factura Electrónica</li>                                    
-                                <li>Nota de Crédito y Débito Electrónica</li>
+                                <li><strong class="amount"><span class="big">₡200.000</span></strong>/Año  *****  <strong><span class="big">₡20.000</span></strong>/mes  </li>
+                                <li>Archivos Electronico: 601 - 1000</li>
+                                <li>Factura Electronica</li>                                    
+                                <li>Nota de Credito y Debito Electronica</li>
                                 <li> <strong><span class="big"> <u>Ademas</u></span></strong></li>
-                                <li>Incluye respaldo de Documentos</li> 
-                                <li>Acceso a recepción de documentos</li>                               
+                                <li>Incluye respaldo de Documentos</li>                                
                                 <li>Incluye soporte</li>
-                                <li><u><span class="big little"><b>*Aplican restricciones</b></span></u></li>
                             </ul>
                             <hr>
                             <a href="#contact-page" class="button">Contactenos</a>
@@ -309,15 +280,32 @@
                             <h3 class="text-uppercase price-title">Plan #5</h3>
                             <hr>
                             <ul class="list-unstyled">
-                                <li><strong class="amount"><span class="big">₡450.000</span></strong>/Año  *****  <strong><span class="big">₡45.000</span></strong>/mes  </li>
-                                <li>Archivos Electrónicos: 3001 - 5000</li>
-                                <li>Factura Electrónica</li>                                    
-                                <li>Nota de Crédito y Débito Electrónica</li>
+                                <li><strong class="amount"><span class="big">₡300.000</span></strong>/Año  *****  <strong><span class="big">₡30.000</span></strong>/mes  </li>
+                                <li>Archivos Electronico: 1001 - 3000</li>
+                                <li>Factura Electronica</li>                                    
+                                <li>Nota de Credito y Debito Electronica</li>
                                 <li> <strong><span class="big"> <u>Ademas</u></span></strong></li>
-                                <li>Incluye respaldo de Documentos</li> 
-                                <li>Acceso a recepción de documentos</li>                               
+                                <li>Incluye respaldo de Documentos</li>                                
                                 <li>Incluye soporte</li>
-                                <li><u><span class="big little"><b>*Aplican restricciones</b></span></u></li>
+                            </ul>
+                            <hr>
+                            <a href="#contact-page" class="button">Contactenos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="box_Pricing box">
+                        <div class="price-table active">
+                            <h3 class="text-uppercase price-title">Plan #6</h3>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li><strong class="amount"><span class="big">₡450.000</span></strong>/Año  *****  <strong><span class="big">₡45.000</span></strong>/mes  </li>
+                                <li>Archivos Electronico: 3001 - 5000</li>
+                                <li>Factura Electronica</li>                                    
+                                <li>Nota de Credito y Debito Electronica</li>
+                                <li> <strong><span class="big"> <u>Ademas</u></span></strong></li>
+                                <li>Incluye respaldo de Documentos</li>                                
+                                <li>Incluye soporte</li>
                             </ul>
                             <hr>
                             <a href="#contact-page" class="button">Contactenos</a>
@@ -369,12 +357,6 @@
                                     <a href="mailto:youremail@example.com"></a>
                                 </p>
                             </div>
-                            <div class="side-icon-box">
-                                <ul class="social-menu x-left">
-                                    <li><a href="https://facebook.com/bemusscr" target="_blank"><i class="ti-facebook"></i></a></li>
-                                    <li><a href="https://www.instagram.com/bemusscr/" target="_blank"><i class="ti-instagram"></i></a></li>
-                                </ul>
-                            </div>
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
@@ -385,7 +367,7 @@
                             </div>
                             <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Asunto del Mensaje">
                             <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Mensaje" required="required"></textarea>
-                            <button type="submit" class="button ">Enviar</button>
+                            <button type="submit" class="button">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -399,7 +381,7 @@
                         <p>&copy;Copyright, BEMUSS. All Rights Reserved 2020.</a></p>
                     </div>
                     <div class="col-xs-12 col-sm-6 pull-right">
-                        <ul class="social-menu-footer text-right x-left">
+                        <ul class="social-menu text-right x-left">
                             <li><a href="https://facebook.com/bemusscr" target="_blank"><i class="ti-facebook"></i></a></li>
                             <li><a href="https://www.instagram.com/bemusscr/" target="_blank"><i class="ti-instagram"></i></a></li>
                         </ul>
