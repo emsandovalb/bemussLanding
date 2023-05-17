@@ -1,0 +1,204 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mainmenu-area #primary-menu > ul > li > a {
+        padding: 30px 12px;
+    }
+    .header-area {
+        padding-top: 80px;
+    }
+    .price-table,
+    .box {
+        padding: 30px 15px;
+    }
+    .price-table.active {
+        padding: 50px 15px;
+    }
+    .single-team {
+        margin-bottom: 30px
+    }
+    .side-icon-boxes {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    
+    .footer-bottom p {
+        margin-top: 0%;
+        font-size: 10px;
+        color: #3B7DFF;
+    }
+    .social-menu li a {
+        display: block;
+        width: 30px;
+        height: 31px;
+        text-align: center;
+        line-height: 2.5em;
+        background-color: #ffffff;
+        color: #3B7DFF;
+        border-radius: 100px;
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        font-size: 15px;
+    }
+    .mainmenu-area .navbar-toggle .icon-bar {
+        background-color: #3B7DFF;
+    }
+    .anlge-bg {
+        background: url(images/angle-bg.png)scroll center bottom -92px;
+    }
+    .p-titulo {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 13px;
+    }
+    .page-title h2,
+    .header-text h2 {
+        font-size: 29px;
+        text-align: center;
+    }
+    .mainmenu-area .navbar-toggle {
+        margin-top: 29px;
+    }
+    .mainmenu-area .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+    }
+    .mainmenu-area #primary-menu {
+        background-color: #ffffff;
+    }
+    .mainmenu-area #primary-menu ul {
+        overflow-y: auto;
+        max-height: 70vh;
+        margin: 0;
+    }
+    .mainmenu-area #primary-menu > ul > li > a {
+        padding: 15px;
+        overflow: hidden;
+    }
+    .box {
+        padding: 30px 15px;
+    }
+    .box .box-icon {
+        height: auto;
+    }
+    .single-blog,
+    .single-team,
+    .price-table.active {
+        margin-top: 30px;
+    }
+    .form-double input {
+        width: 100%;
+    }
+    .footer-top {
+        margin-bottom: 50px;
+    }
+    .x-left {s
+        text-align: right;
+    }
+    .mainmenu-area .logo {
+        margin-left: 15px;
+        margin-top: -17%;
+    }
+    .footer-bottom p {
+        margin-top: 0%;
+        font-size: 10px;
+        color: #3B7DFF;
+    }
+    /* .social-menu li a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 2.5em;
+        background-color: #ffffff;
+        color: #3B7DFF;
+        border-radius: 100px;
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        font-size: 15px;
+    } */
+    .social-menu-footer li a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 2.5em;
+        background-color: #ffffff;
+        color: #3B7DFF;
+        border-radius: 100px;
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        font-size: 15px;
+    }
+
+    .social-menu-footer li a {
+        display: contents;
+        display: flex;
+    }
+    .social-menu li a {
+        display: none;
+    }
+    .social-menu-navBar{
+        display: none;
+    }
+    .mainmenu-area .navbar-toggle .icon-bar {
+        background-color: #3B7DFF;
+    }
+    /* .anlge-bg {
+        background: url(images/angle-bg.png)scroll center bottom -92px;
+    } */
+    .p-titulo {
+        font-size: 20px;
+        text-align: center;
+    }
+    /* .anlge-bg {
+        background: url(images/angle-bg.png) no-repeat scroll center bottom 133%;
+    } */
+    
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px)
+{
+    .anlge-bg {
+        background: url(images/angle-bg.png)scroll center bottom -92px;
+    }
+    ul {
+        list-style: none;
+        /* display: inline-flex; */
+        margin-top: 10px;
+        display: contents;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 568px)
+{
+    .anlge-bg {
+        background: url(images/angle-bg.png)scroll center bottom -92px;
+    }
+    ul {
+        list-style: none;
+        /* display: inline-flex; */
+        margin-top: 10px;
+        display: contents;
+    }
+}
