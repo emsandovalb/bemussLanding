@@ -1,0 +1,109 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bemuss order bot artwork">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="120" x2="1240" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07101C"/>
+      <stop offset="1" stop-color="#040712"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#8FD3FF"/>
+      <stop offset="0.55" stop-color="#2F82FF"/>
+      <stop offset="1" stop-color="#0B5CFF"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#C5F7D2"/>
+      <stop offset="1" stop-color="#25D366"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="26" stdDeviation="30" flood-color="#000000" flood-opacity="0.52"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#60A5FA" flood-opacity="0.14"/>
+    </filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <ellipse cx="1040" cy="810" rx="370" ry="88" fill="#2563EB" fill-opacity="0.24" filter="url(#glow)"/>
+  <ellipse cx="300" cy="130" rx="190" ry="120" fill="#60A5FA" fill-opacity="0.10" filter="url(#soft)"/>
+  <ellipse cx="1130" cy="154" rx="150" ry="92" fill="#60A5FA" fill-opacity="0.08" filter="url(#soft)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="170" y="112" width="1060" height="680" rx="38" fill="#09111F" stroke="#72B6FF" stroke-opacity="0.26"/>
+    <rect x="170" y="112" width="1060" height="76" rx="38" fill="#08111F"/>
+    <circle cx="232" cy="150" r="7" fill="#60A5FA"/>
+    <circle cx="252" cy="150" r="7" fill="#2F82FF" fill-opacity="0.55"/>
+    <circle cx="272" cy="150" r="7" fill="#2F82FF" fill-opacity="0.25"/>
+    <text x="314" y="156" fill="#EAF2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">BEMUSS</text>
+    <text x="410" y="156" fill="#8FA4C4" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">Order Bot</text>
+    <rect x="1002" y="134" width="140" height="36" rx="12" fill="#0E1A30" stroke="#72B6FF" stroke-opacity="0.16"/>
+    <text x="1020" y="157" fill="#CFE5FF" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Automation live</text>
+
+    <rect x="192" y="218" width="1016" height="472" rx="30" fill="#0A1222" stroke="#72B6FF" stroke-opacity="0.10"/>
+    <rect x="230" y="258" width="304" height="352" rx="30" fill="#091120" stroke="#72B6FF" stroke-opacity="0.12"/>
+    <text x="256" y="298" fill="#EAF2FF" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">WhatsApp conversation</text>
+    <rect x="252" y="320" width="214" height="52" rx="20" fill="#25D366"/>
+    <text x="270" y="342" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Order received</text>
+    <text x="270" y="360" fill="#EAF2FF" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600">2 burgers · 1 drink</text>
+    <rect x="290" y="388" width="228" height="52" rx="20" fill="#EAF2FF"/>
+    <text x="308" y="410" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Payment confirmed</text>
+    <text x="308" y="428" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600">Card charged · CRC 12,500</text>
+    <rect x="252" y="456" width="214" height="52" rx="20" fill="#DCEBFF"/>
+    <text x="270" y="478" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">On the way</text>
+    <text x="270" y="496" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600">Delivery ETA 18 min</text>
+    <rect x="252" y="526" width="214" height="42" rx="21" fill="#101B31"/>
+    <rect x="270" y="536" width="70" height="22" rx="11" fill="#25D366"/>
+    <text x="282" y="551" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">Bot</text>
+    <rect x="352" y="536" width="94" height="22" rx="11" fill="#2563EB"/>
+    <text x="368" y="551" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">Automation</text>
+
+    <rect x="568" y="238" width="236" height="386" rx="34" fill="#091120" stroke="#72B6FF" stroke-opacity="0.12"/>
+    <rect x="598" y="252" width="176" height="12" rx="6" fill="#101B31"/>
+    <rect x="608" y="278" width="156" height="26" rx="13" fill="#25D366"/>
+    <text x="628" y="295" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Order received</text>
+    <rect x="624" y="318" width="140" height="28" rx="14" fill="#EAF2FF"/>
+    <text x="640" y="336" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Payment confirmed</text>
+    <rect x="608" y="360" width="156" height="26" rx="13" fill="#DCEBFF"/>
+    <text x="628" y="377" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Delivery tracking</text>
+    <rect x="608" y="404" width="156" height="88" rx="20" fill="url(#glass)" stroke="#72B6FF" stroke-opacity="0.12"/>
+    <circle cx="656" cy="448" r="28" fill="#25D366"/>
+    <path d="M644 448h24" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M656 436v24" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <text x="622" y="520" fill="#8FA4C4" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Flow node</text>
+    <rect x="608" y="536" width="156" height="56" rx="18" fill="#101B31"/>
+    <rect x="626" y="552" width="60" height="12" rx="6" fill="#25D366"/>
+    <rect x="626" y="572" width="92" height="10" rx="5" fill="#2F82FF"/>
+
+    <rect x="840" y="238" width="320" height="386" rx="34" fill="#091120" stroke="#72B6FF" stroke-opacity="0.12"/>
+    <rect x="884" y="266" width="232" height="290" rx="34" fill="#08111F" stroke="#72B6FF" stroke-opacity="0.14"/>
+    <circle cx="1000" cy="338" r="84" fill="url(#green)" fill-opacity="0.92"/>
+    <text x="956" y="342" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900">WA</text>
+    <text x="930" y="394" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">WhatsApp</text>
+    <text x="930" y="418" fill="#EAF2FF" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600">Conversation first</text>
+    <rect x="914" y="452" width="160" height="28" rx="14" fill="#25D366"/>
+    <text x="928" y="471" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Order confirmed</text>
+    <rect x="914" y="492" width="138" height="28" rx="14" fill="#EAF2FF"/>
+    <text x="928" y="511" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Packed for delivery</text>
+    <rect x="914" y="532" width="110" height="28" rx="14" fill="#2563EB"/>
+    <text x="932" y="551" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">In transit</text>
+
+    <path d="M1188 286C1170 318 1170 358 1188 390C1206 422 1206 462 1188 494" stroke="#25D366" stroke-opacity="0.35" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="1188" cy="286" r="14" fill="#25D366"/>
+    <circle cx="1188" cy="390" r="14" fill="#EAF2FF"/>
+    <circle cx="1188" cy="494" r="14" fill="#2563EB"/>
+
+    <rect x="456" y="662" width="718" height="42" rx="21" fill="#0F1B33"/>
+    <rect x="476" y="670" width="196" height="26" rx="13" fill="#25D366"/>
+    <text x="494" y="687" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Automation flow</text>
+    <rect x="690" y="670" width="180" height="26" rx="13" fill="#2563EB"/>
+    <text x="710" y="687" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Status updates</text>
+    <rect x="888" y="670" width="248" height="26" rx="13" fill="#101B31"/>
+    <text x="908" y="687" fill="#8FA4C4" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Chat bubbles drive the scene</text>
+  </g>
+</svg>

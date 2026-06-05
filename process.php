@@ -1,54 +1,84 @@
 <?php
-// Configure your Subject Prefix and Recipient here
-$subjectPrefix = '[Contact via website]';
-$emailTo       = '<YOUR_EMAIL_HERE>';
-$errors = array(); // array to hold validation errors
-$data   = array(); // array to pass back data
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name    = stripslashes(trim($_POST['name']));
-    $email   = stripslashes(trim($_POST['email']));
-    $subject = stripslashes(trim($_POST['subject']));
-    $message = stripslashes(trim($_POST['message']));
-    if (empty($name)) {
-        $errors['name'] = 'Name is required.';
+header('Content-Type: application/json; charset=utf-8');
+
+$recipient = 'ventas@bemuss.com';
+$subjectPrefix = '[Bemuss]';
+$errors = array();
+$data = array();
+
+function request_value($primary, $fallback = null) {
+    if (isset($_POST[$primary])) {
+        return trim(stripslashes($_POST[$primary]));
     }
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = 'Email is invalid.';
+
+    if ($fallback !== null && isset($_POST[$fallback])) {
+        return trim(stripslashes($_POST[$fallback]));
     }
-    if (empty($subject)) {
-        $errors['subject'] = 'Subject is required.';
-    }
-    if (empty($message)) {
-        $errors['message'] = 'Message is required.';
-    }
-    // if there are any errors in our errors array, return a success boolean or false
-    if (!empty($errors)) {
-        $data['success'] = false;
-        $data['errors']  = $errors;
-    } else {
-        $subject = "$subjectPrefix $subject";
-        $body    = '
-            <strong>Name: </strong>'.$name.'<br />
-            <strong>Email: </strong>'.$email.'<br />
-            <strong>Message: </strong>'.nl2br($message).'<br />
-        ';
-        $headers  = "MIME-Version: 1.1" . PHP_EOL;
-        $headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
-        $headers .= "Content-Transfer-Encoding: 8bit" . PHP_EOL;
-        $headers .= "Date: " . date('r', $_SERVER['REQUEST_TIME']) . PHP_EOL;
-        $headers .= "Message-ID: <" . $_SERVER['REQUEST_TIME'] . md5($_SERVER['REQUEST_TIME']) . '@' . $_SERVER['SERVER_NAME'] . '>' . PHP_EOL;
-        $headers .= "From: " . "=?UTF-8?B?".base64_encode($name)."?=" . "<$email>" . PHP_EOL;
-        $headers .= "Return-Path: $emailTo" . PHP_EOL;
-        $headers .= "Reply-To: $email" . PHP_EOL;
-        $headers .= "X-Mailer: PHP/". phpversion() . PHP_EOL;
-        $headers .= "X-Originating-IP: " . $_SERVER['SERVER_ADDR'] . PHP_EOL;
-        mail($emailTo, "=?utf-8?B?" . base64_encode($subject) . "?=", $body, $headers);
-        $data['success'] = true;
-        $data['message'] = 'Congratulations. Your message has been sent successfully';
-    }
-    // return all our data to an AJAX call
-    echo json_encode($data);
+
+    return '';
 }
 
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo json_encode(array(
+        'success' => false,
+        'message' => 'Método no permitido.'
+    ));
+    exit;
+}
 
+$name = request_value('name', 'form-name');
+$email = request_value('email', 'form-email');
+$subject = request_value('subject', 'form-subject');
+$message = request_value('message', 'form-message');
 
+if ($name === '') {
+    $errors['name'] = 'El nombre es requerido.';
+}
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $errors['email'] = 'El correo electrónico no es válido.';
+}
+
+if ($message === '') {
+    $errors['message'] = 'El mensaje es requerido.';
+}
+
+if (!empty($errors)) {
+    http_response_code(422);
+    $data['success'] = false;
+    $data['errors'] = $errors;
+    echo json_encode($data, JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
+if ($subject === '') {
+    $subject = 'Nuevo mensaje desde Bemuss';
+}
+
+$subjectLine = $subjectPrefix . ' ' . $subject;
+$body = '<strong>Nombre:</strong> ' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '<br>';
+$body .= '<strong>Correo:</strong> ' . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . '<br>';
+$body .= '<strong>Tema:</strong> ' . htmlspecialchars($subject, ENT_QUOTES, 'UTF-8') . '<br><br>';
+$body .= '<strong>Mensaje:</strong><br>' . nl2br(htmlspecialchars($message, ENT_QUOTES, 'UTF-8'));
+
+$headers = "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/html; charset=utf-8\r\n";
+$headers .= "From: Bemuss <" . $recipient . ">\r\n";
+$headers .= "Reply-To: " . $email . "\r\n";
+
+$sent = @mail($recipient, $subjectLine, $body, $headers);
+
+if (!$sent) {
+    http_response_code(500);
+    echo json_encode(array(
+        'success' => false,
+        'message' => 'No se pudo enviar el mensaje en este momento.'
+    ), JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
+echo json_encode(array(
+    'success' => true,
+    'message' => 'Tu mensaje fue enviado correctamente. Te contactaremos pronto.'
+), JSON_UNESCAPED_UNICODE);

@@ -1,0 +1,94 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bemuss Bamos al Fut artwork">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="120" x2="1240" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07101C"/>
+      <stop offset="1" stop-color="#040712"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#8FD3FF"/>
+      <stop offset="0.55" stop-color="#2F82FF"/>
+      <stop offset="1" stop-color="#0B5CFF"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#C5F7D2"/>
+      <stop offset="1" stop-color="#16A34A"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="26" stdDeviation="30" flood-color="#000000" flood-opacity="0.52"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#60A5FA" flood-opacity="0.14"/>
+    </filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <ellipse cx="1040" cy="810" rx="370" ry="88" fill="#2563EB" fill-opacity="0.24" filter="url(#glow)"/>
+  <ellipse cx="300" cy="130" rx="190" ry="120" fill="#60A5FA" fill-opacity="0.10" filter="url(#soft)"/>
+  <ellipse cx="1130" cy="154" rx="150" ry="92" fill="#60A5FA" fill-opacity="0.08" filter="url(#soft)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="170" y="112" width="1060" height="680" rx="38" fill="#09111F" stroke="#72B6FF" stroke-opacity="0.26"/>
+    <rect x="170" y="112" width="1060" height="76" rx="38" fill="#08111F"/>
+    <circle cx="232" cy="150" r="7" fill="#60A5FA"/>
+    <circle cx="252" cy="150" r="7" fill="#2F82FF" fill-opacity="0.55"/>
+    <circle cx="272" cy="150" r="7" fill="#2F82FF" fill-opacity="0.25"/>
+    <text x="314" y="156" fill="#EAF2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">BEMUSS</text>
+    <text x="410" y="156" fill="#8FA4C4" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">Bamos al Fut</text>
+    <rect x="1030" y="134" width="132" height="36" rx="12" fill="#0E1A30" stroke="#72B6FF" stroke-opacity="0.16"/>
+    <text x="1046" y="157" fill="#CFE5FF" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Live booking</text>
+
+    <rect x="192" y="218" width="1016" height="472" rx="30" fill="#091120" stroke="#72B6FF" stroke-opacity="0.10"/>
+    <ellipse cx="700" cy="576" rx="404" ry="104" fill="#16A34A" fill-opacity="0.18" filter="url(#soft)"/>
+    <ellipse cx="700" cy="576" rx="404" ry="104" fill="none" stroke="#19C15E" stroke-opacity="0.22" stroke-width="6"/>
+
+    <rect x="262" y="286" width="876" height="238" rx="30" fill="#0D1730" stroke="#72B6FF" stroke-opacity="0.10"/>
+    <path d="M280 512C340 414 410 356 500 338C590 320 670 344 740 378C810 412 900 434 1106 350" stroke="#1F7DFF" stroke-opacity="0.18" stroke-width="44" stroke-linecap="round"/>
+    <path d="M280 512C340 414 410 356 500 338C590 320 670 344 740 378C810 412 900 434 1106 350" stroke="#16A34A" stroke-opacity="0.16" stroke-width="18" stroke-linecap="round"/>
+
+    <rect x="320" y="308" width="760" height="180" rx="22" fill="#0A1222" stroke="#72B6FF" stroke-opacity="0.10"/>
+    <path d="M360 336H1040" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M360 380H1040" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M360 424H1040" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M360 468H1040" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M410 308V488" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M500 308V488" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M590 308V488" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M680 308V488" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M770 308V488" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M860 308V488" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <path d="M950 308V488" stroke="#DCEBFF" stroke-opacity="0.08" stroke-width="2"/>
+    <circle cx="500" cy="380" r="48" fill="#16A34A"/>
+    <circle cx="500" cy="380" r="16" fill="#FFFFFF"/>
+    <circle cx="580" cy="424" r="20" fill="#2F82FF"/>
+    <circle cx="660" cy="336" r="14" fill="#16A34A"/>
+    <circle cx="760" cy="444" r="24" fill="#2F82FF"/>
+    <circle cx="860" cy="388" r="16" fill="#16A34A"/>
+    <circle cx="950" cy="336" r="12" fill="#2F82FF"/>
+
+    <rect x="276" y="520" width="442" height="122" rx="24" fill="#0B1322" stroke="#72B6FF" stroke-opacity="0.12"/>
+    <text x="302" y="558" fill="#EAF2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Match day experience</text>
+    <text x="302" y="584" fill="#8FA4C4" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600">Book a pitch, pick a time, pay instantly</text>
+    <rect x="302" y="602" width="112" height="20" rx="10" fill="#16A34A"/>
+    <text x="318" y="616" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">Reserve slot</text>
+    <rect x="436" y="602" width="104" height="20" rx="10" fill="#2F82FF"/>
+    <text x="452" y="616" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">Pay now</text>
+
+    <rect x="742" y="520" width="442" height="122" rx="24" fill="#0B1322" stroke="#72B6FF" stroke-opacity="0.12"/>
+    <text x="768" y="558" fill="#EAF2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Mobile booking app</text>
+    <rect x="946" y="538" width="114" height="82" rx="22" fill="#091120" stroke="#72B6FF" stroke-opacity="0.18"/>
+    <circle cx="1003" cy="581" r="16" fill="#2F82FF"/>
+    <path d="M995 581h16" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M1003 573v16" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <text x="770" y="586" fill="#8FA4C4" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600">Secondary UI only. Stadium leads.</text>
+    <rect x="768" y="602" width="138" height="20" rx="10" fill="url(#green)"/>
+    <text x="784" y="616" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">Football detail</text>
+  </g>
+</svg>
